@@ -1,9 +1,9 @@
 
 function distanceFromHqInBlocks(pickup) {
     if (pickup >= 42) {
-        return (pickup - 42);
-    } else (pickup < 42); {
-        return (42 - pickup);
+        return (pickup - 42)
+    } else {
+        return (42 - pickup)
     }
 }
 
@@ -23,11 +23,11 @@ function distanceTravelledInFeet (start, end) {
 
 
 function calculatesFarePrice(start, end) {
-    if (distanceFromHqInFeet(start, end) < 400) {
+    if (distanceTravelledInFeet(start, end) < 400) {
         return 0;  
-    } else if (distanceFromHqInFeet(start, end) >= 400 && distanceFromHqInFeet(start, end) <= 2000) {
-        return ((distanceFromHqInFeet(start, end) -400) * .02); 
-    } else if (distanceFromHqInFeet(start, end) > 2000 && distanceFromHqInFeet(start,end) < 2499) {
+    } else if (distanceTravelledInFeet(start, end) >= 400 && distanceTravelledInFeet(start, end) <= 2000) {
+        return ((distanceTravelledInFeet(start, end) -400) * .02); 
+    } else if (distanceTravelledInFeet(start, end) > 2000 && distanceTravelledInFeet(start,end) < 2499) {
             return 25
     } else {
         return 'cannot travel that far';
